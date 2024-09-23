@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'calculator_page.dart';
+import 'theme_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,6 +43,16 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: Text('Calculadora'),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ThemePage()),
+                );
+              },
+              child: Text('Temas'),
             ),
           ],
         ),
